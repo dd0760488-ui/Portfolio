@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  line-height: 1.6;
+  background: #f4f7fb;
+  color: #333;
+}
+
+header {
+  background: #0f172a;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
+  min-height: 100vh;
+}
+
+.home h2 {
+  font-size: 48px;
+}
+
+.home p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0284c7;
+}
+
+h2.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #0f172a;
+}
+
+.skills-list, .project-list, .education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact button {
+  padding: 12px;
+  border: none;
+  background: #0f172a;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #1e293b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #38bdf8;
+}
+
+@media(max-width:768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+}
+
+  </style>
+</head>
+<body><header>
+  <nav>
+    <h1>Dharshini</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header><section id="home" class="home">
+  <h2>Hello, I'm Dharshini</h2>
+  <p>Web Developer | Programmer | Student</p>
+  <a href="Blue and Gray Simple Professional CV Resume (2).docx" download class="btn">Download Resume</a>
+</section><section id="skills">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills-list">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">Python</div>
+    <div class="card">Java</div>
+    <div class="card">SQL</div>
+  </div>
+</section><section id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="education-list">
+    <div class="card">
+      <h3>Bachelor Degree</h3>
+      <p>Al Ameen Engineering college,Erode</p>
+      <p>2023 - 2027</p>
+    </div>
+    <div class="card">
+      <h3>Higher Secondary</h3>
+      <p>Government Higher Secondary School,Muthur</p>
+      <p>2021 - 2023</p>
+    </div>
+  </div>
+</section><section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-list">
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Personal professional portfolio using HTML, CSS, JS.</p>
+    </div>
+    <div class="card">
+      <h3>Campus Safety App</h3>
+      <p>Emergency alert system with panic button and location.</p>
+    </div>
+    <div class="card">
+      <h3>Smart Helmet Project</h3>
+      <p>Helmet safety system using sensors and GPS.</p>
+    </div>
+  </div>
+</section><section id="contact" class="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section><footer>
+  <p>Connect with me</p>
+  <div class="social-links">
+    <a href="https://linkedin.com/in/dharshini-dharshini-923905337" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/dd0760488-ui" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+  <p>© 2026 Dharshini | All Rights Reserved</p>
+</footer><script>
+  
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Message sent successfully!');
+    this.reset();
+  });
+</script></body>
+</html>
